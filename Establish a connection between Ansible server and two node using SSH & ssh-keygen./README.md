@@ -25,9 +25,9 @@ We can also read this simply as a connection between two VM’s using ssh. <br>
 
 
 **Step-1=>** <br>
-Create three instances one is for ansible server and two nodes i.e node1 and node2br>
+Create three instances one is for ansible server and two nodes i.e node1 and node2
 
-Configurations:br>
+Configurations:
 ![image001](https://user-images.githubusercontent.com/46487696/120502474-1954a380-c3e0-11eb-9b8a-cf6713bdba97.png)
 
 
@@ -50,7 +50,8 @@ go to Ansible server instances<br>
 Download the below package which consists of Ansible server files<br>
 
 ```
-wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpmyum install epel-release-latest-7.noarch.rpm –y<br>
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install epel-release-latest-7.noarch.rpm –y
 yum update –y 
 ```
 
@@ -190,6 +191,7 @@ for this, we can use ssh-keygen.<br>
 Go to Ansible server machine and redirect to Ansible user and follow the below command.<br>
 
 command:<br>
+ 
 ```
 ssh-keygen
 ls –a      //to see hidden directories<br>
@@ -199,8 +201,9 @@ ssh-copy-id
 <username>@<Private IP>                             //node1
 ssh-copy-id 
 <username>@<Private IP>                             //node2
-```
 
+```
+ 
 from server to node1
 
 ![image](https://user-images.githubusercontent.com/46487696/120504848-19ee3980-c3e2-11eb-8d6c-fee6eedd9a00.png)
